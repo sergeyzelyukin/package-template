@@ -24,6 +24,11 @@
     └── test_mymodule2.py
 ```
 
+## To install dependencies
+```
+$ pip install -r requirements.txt
+```
+
 ## To test
 ```
 $ python setup.py test

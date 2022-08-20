@@ -13,4 +13,11 @@ setup(
         "flake8",
         "pytest-runner"
     ],
+    python_requires = ">=3.7",
+    install_requires = [
+        "click>=8.0.0",
+    ],
+    tests_require = [
+        "pytest"
+    ],
 )
