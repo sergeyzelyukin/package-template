@@ -1,4 +1,4 @@
-from src.mymodules1.mymodule1 import loader
+from mypackage1.mymodules1.mymodule1 import loader
 
 
 def main():

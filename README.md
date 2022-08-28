@@ -5,19 +5,19 @@
 .
 ├── LICENSE
 ├── README.md
-├── resources
-│   ├── __init__.py
-│   └── data
-│       └── file1.txt
-├── setup.cfg
-├── setup.py
-├── src
+├── mypackage1
 │   ├── __init__.py
 │   ├── cli.py
 │   └── mymodules1
 │       ├── __init__.py
 │       ├── mymodule1.py
 │       └── mymodule2.py
+├── resources
+│   ├── __init__.py
+│   └── data
+│       └── file1.txt
+├── setup.cfg
+├── setup.py
 └── tests
     ├── conftest.py
     ├── test_mymodule1.py
