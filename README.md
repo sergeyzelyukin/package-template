@@ -55,6 +55,14 @@ main func started
 reading data file: '12345'
 ```
 
+## To import
+```
+>>> from mypackage1.mymodules1.mymodule2 import load_data_file
+>>> data = load_data_file()
+>>> print(data)
+12345
+```
+
 ## To uninstall
 ```
 $ pip uninstall mypackage1
