@@ -6,7 +6,7 @@ setup(
     package_data={"resources": ["data/*.txt"]},
     entry_points = {
         "console_scripts": [
-            "mypkg1=src.cli:main"
+            "mypkg1=mypackage1.cli:main"
         ]
     },
     setup_requires = [

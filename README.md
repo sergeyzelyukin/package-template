@@ -5,19 +5,19 @@
 .
 ├── LICENSE
 ├── README.md
-├── resources
-│   ├── __init__.py
-│   └── data
-│       └── file1.txt
-├── setup.cfg
-├── setup.py
-├── src
+├── mypackage1
 │   ├── __init__.py
 │   ├── cli.py
 │   └── mymodules1
 │       ├── __init__.py
 │       ├── mymodule1.py
 │       └── mymodule2.py
+├── resources
+│   ├── __init__.py
+│   └── data
+│       └── file1.txt
+├── setup.cfg
+├── setup.py
 └── tests
     ├── conftest.py
     ├── test_mymodule1.py
@@ -53,6 +53,14 @@ Successfully installed mypackage1-0.3.4
 $ mypkg1
 main func started
 reading data file: '12345'
+```
+
+## To import
+```
+>>> from mypackage1.mymodules1.mymodule2 import load_data_file
+>>> data = load_data_file()
+>>> print(data)
+12345
 ```
 
 ## To uninstall
