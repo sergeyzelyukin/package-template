@@ -8,14 +8,12 @@
 ├── mypackage1
 │   ├── __init__.py
 │   ├── cli.py
+│   ├── data
+│   │   └── file1.txt
 │   └── mymodules1
 │       ├── __init__.py
 │       ├── mymodule1.py
 │       └── mymodule2.py
-├── resources
-│   ├── __init__.py
-│   └── data
-│       └── file1.txt
 ├── setup.cfg
 ├── setup.py
 └── tests
@@ -32,11 +30,21 @@ $ pip install -r requirements.txt
 ## To test
 ```
 $ python setup.py test
+========================================================================== test session starts ==========================================================================
 ...
-================================================= test session starts ==================================================
-tests/test_mymodule1.py ....                                                                                     [ 80%]
-tests/test_mymodule2.py .                                                                                        [100%]
-================================================== 5 passed in 0.44s ===================================================
+tests/test_mymodule1.py::test_loader1 PASSED                                                                                                                      [ 20%]
+tests/test_mymodule1.py::test_loader2 PASSED                                                                                                                      [ 40%]
+tests/test_mymodule1.py::test_loader3 PASSED                                                                                                                      [ 60%]
+tests/test_mymodule1.py::test_loader4 PASSED                                                                                                                      [ 80%]
+tests/test_mymodule2.py::test_load_data_file PASSED                                                                                                               [100%]
+=========================================================================== 5 passed in 0.36s ===========================================================================
+```
+
+## To check formatting
+```
+$ python setup.py flake8
+running flake8
+WARNING: flake8 setuptools integration is deprecated and scheduled for removal in 4.x.  For more information, see https://gitlab.com/pycqa/flake8/issues/544
 ```
 
 ## To install
