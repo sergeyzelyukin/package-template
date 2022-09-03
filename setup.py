@@ -4,6 +4,7 @@ setup(
     version="0.3.5",
     packages=find_packages("."),
     package_data={"mypackage1": ["data/*.txt"]},
+    scripts=["bin/auxiliary1.sh"],
     entry_points = {
         "console_scripts": [
             "mypkg1=mypackage1.cli:main"

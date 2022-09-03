@@ -5,6 +5,8 @@
 .
 ├── LICENSE
 ├── README.md
+├── bin
+│   └── auxiliary1.sh
 ├── mypackage1
 │   ├── __init__.py
 │   ├── cli.py
@@ -61,6 +63,11 @@ Successfully installed mypackage1-0.3.4
 $ mypkg1
 main func started
 reading data file: '12345'
+```
+
+```
+$ auxiliary1.sh
+auxiliary script is running!
 ```
 
 ## To import
